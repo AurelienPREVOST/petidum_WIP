@@ -1,17 +1,4 @@
-/* @font-face {
-  font-family: "Sharp Grotesk Book 25 Regular";
-  src: url("https://db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.eot");
-  src: url("https://db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.svg#Sharp Grotesk Book 25 Regular")format("svg");
-} */
-
-
-
 * {
-  /* font-family: "Sharp Grotesk Book 25 Regular"; */
   font-family: "Hanken Grotesk", sans-serif;
   box-sizing: border-box;
   color:#212121;
@@ -48,22 +35,12 @@ h2 {
   padding:10%
 }
 
-
 header {
   background-color: rgba(0,0,0,0);
-  /* padding: 2% 10%; */
-  /* height:150px; */
   width:100vw;
   margin-top:8%;
 }
 
-/* header nav {
-  padding-top:20px;
-  height:60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
 header nav ol {
   width: 100%;
   display: flex;
@@ -107,7 +84,6 @@ header nav img {
 }
 
 #section1, #section9 {
-  /* display:flex; */
   background-color: #FFFFFF;
 }
 #section1 div, #section9 div {
@@ -120,16 +96,6 @@ header nav img {
 p {
   margin:1.5em 0;
 }
-
-
-/* #section1 > div:last-child {
-  background-image: url("https://images.unsplash.com/photo-1708669101365-1a9e3e834ee7?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-}
-
-#section9 > div:last-child {
-  background-image: url("https://images.unsplash.com/photo-1708770362006-7f8e5b02b0f5?q=80&w=3465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-} */
-
 
 #section1 > div:first-child, #section9 > div:first-child {
   width: 100%;
@@ -190,7 +156,6 @@ p {
 }
 #section3 div {
   margin-top:5%;
-  /* display: flex; */
   flex-wrap: nowrap;
   justify-content: space-between;
 }
@@ -340,12 +305,9 @@ p {
   gap:10px
 }
 
-
 #section7 a {
   color:#0066FF
 }
-
-
 
 #section8 {
   background-color: #C1EAFF;
@@ -381,11 +343,9 @@ p {
   text-align: center;
 }
 
-
 #section12 {
   background-color: #C1EAFF;
 }
-
 
 #section12 h2 {
   text-align: center;
@@ -401,9 +361,6 @@ p {
   margin-right:1em;
   border-radius: 10px;
 }
-
-
-
 
 footer {
   background-color: #2A6475;
@@ -466,8 +423,6 @@ footer div:nth-child(2) p:last-child a{
   color:rgb(213, 213, 213)
 }
 
-
-
 .carousel {
   min-width:40vw;
   height:40vw;
@@ -481,8 +436,6 @@ footer div:nth-child(2) p:last-child a{
 #carouselContainer {
   transition: transform 0.5s ease-in-out;
 }
-
-
 
 @media screen and (min-width: 480px) {
   header {
@@ -583,6 +536,13 @@ footer div:nth-child(2) p:last-child a{
     height:30vw;
     border-radius:50px;
   }
+}
 
-
+@media screen and (min-width: 1281px) {
+  header nav ol {
+    padding: 0 15%;
+  }
+  #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section11, #section10, #section12, footer {
+    padding:10% 15%
+  }
 }
