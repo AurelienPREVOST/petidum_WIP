@@ -269,6 +269,7 @@ p {
 
 #section6 {
   background-color: #FFF8E0;
+  overflow-x: hidden;
 }
 #section6 img{
   border-radius: 20px;

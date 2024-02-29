@@ -297,8 +297,10 @@
 
     function updateScrollButtons() {
       const screenWidth = window.innerWidth;
+      console.log("largeur d'ecran", screenWidth)
       const vwValue = screenWidth < 480 ? 42 : 34;
       let limitValue = screenWidth < 480 ? 10 : 8;
+      console.log(limitValue)
       scrollOnLeft.disabled = i === 0;
       scrollOnRight.disabled = i === limitValue;
       const transformValue = `translateX(${-i * vwValue}vw)`;
@@ -308,21 +310,28 @@
     function scrollRight() {
       const screenWidth = window.innerWidth;
       let limitValue = screenWidth < 480 ? 10 : 8;
+      console.log(limitValue)
+
       if (i === limitValue) {
         return;
       }
       i++;
+      console.log(i)
+
       updateScrollButtons();
     }
 
     function scrollLeft() {
       const screenWidth = window.innerWidth;
       let limitValue = screenWidth < 480 ? 10 : 8;
+      console.log(limitValue)
+
       if (i === 0) {
         return;
       }
 
       i--;
+      console.log(i)
       updateScrollButtons();
     }
 
