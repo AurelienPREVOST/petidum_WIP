@@ -111,15 +111,31 @@
     <div>
       <h2>Nos locaux et notre jardin</h2>
       <div>
-        <button>
+        <button id="scrollOnLeft" onclick="srollLeft()">
           <
         </button>
-        <button>
+        <button id="scrollOnRight" onclick="srollRight()">
           >
         </button>
       </div>
     </div>
-    CAROUSEL A METTRE ICI
+<!-- CAROUSEL RESPONSIVE HOMEMADE -->
+
+    <div id="carouselContainer" style="transform:translateX(0vw)">
+      <div class="carousel" style="background-image:url(https://plus.unsplash.com/premium_photo-1674086524511-567ad049a61a?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      </div>
+      <div class="carousel" style="background-image:url(https://images.unsplash.com/photo-1709125506210-a59fffe3d004?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      </div>
+      <div class="carousel" style="background-image:url(https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      </div>
+      <div class="carousel" style="background-image:url(https://plus.unsplash.com/premium_photo-1705091309844-37d07512b916?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      </div>
+      <div class="carousel" style="background-image:url(https://images.unsplash.com/photo-1709002461508-408bdea0b5e9?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      </div>
+    </div>
+
+<!-- CAROUSEL RESPONSIVE HOMEMADE -->
+
   </section>
 
   <section id="section7">
@@ -244,16 +260,70 @@
     const link1 = document.querySelector("header nav ol li:nth-child(2)");
     const link2 = document.querySelector("header nav ol li:nth-child(3)");
     const sections = Array.from({ length: 12 }, (_, i) => document.getElementById(`section${i + 1}`));
-  
+
     function changePage() {
       link1.classList.toggle("active");
       link2.classList.toggle("active");
-  
+
       sections.forEach(section => {
         // Toggle display property directly
         section.style.display = (section.style.display === 'none') ? '' : 'none';
       });
     }
   </script>
+
+
+<script>
+  // Gestion carousel homemade
+  const carouselContainer = document.getElementById("carouselContainer");
+  const scrollOnLeft = document.getElementById("scrollOnLeft");
+  const scrollOnRight = document.getElementById("scrollOnRight");
+
+  let i = 0;
+
+  function updateScrollButtons() {
+      // Récupérer la largeur de l'écran
+      const screenWidth = window.innerWidth;
+
+      // Changer la valeur en fonction de la largeur de l'écran
+      const vwValue = screenWidth < 480 ? 42 : 34;
+
+      // Mettre à jour les boutons de défilement en fonction de la position actuelle
+      scrollOnLeft.disabled = i === 0;
+      scrollOnRight.disabled = i === 3;
+
+      // Mettre à jour la position du carousel
+      const transformValue = `translateX(${-i * vwValue}vw)`;
+      carouselContainer.style.transform = transformValue;
+  }
+
+  function scrollRight() {
+      if (i === 3) {
+          return;
+      }
+      i++;
+      updateScrollButtons();
+  }
+
+  function scrollLeft() {
+      if (i === 0) {
+          return;
+      }
+      i--;
+      updateScrollButtons();
+  }
+
+  // Appeler la fonction pour configurer les boutons et la position initiale
+  updateScrollButtons();
+
+  // Ajouter des écouteurs d'événements pour les boutons
+  scrollOnLeft.addEventListener("click", scrollLeft);
+  scrollOnRight.addEventListener("click", scrollRight);
+
+  // Ajouter un écouteur d'événement pour redimensionner la fenêtre
+  window.addEventListener("resize", updateScrollButtons);
+</script>
+
+
 </body>
 </html>
