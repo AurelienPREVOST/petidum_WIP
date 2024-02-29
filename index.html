@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>PETIDUM</title>
 </head>
@@ -11,15 +14,14 @@
   <!-- BARRE DE NAVIGATION -->
   <header>
     <nav>
-      <img src="./public/LOGO.png" alt="logo de petidum">
       <ol>
-        <li>Créche Petidum</li>
-        <li>Actualités et espace parents</li>
-        <li>Contactez-nous</li>
+        <img src="./public/LOGO.png" alt="logo de petidum">
+        <li class="active" onclick="changePage()">Créche Petidum</li>
+        <li onclick="changePage()">Actualités et espace parents</li>
+        <a href="/">Contactez-nous</a>
       </ol>
     </nav>
   </header>
-
 
   <section id="section1">
     <div>
@@ -29,68 +31,71 @@
       <p>Horaires d’accueil: lundi au vendredi, 7:30 - 18:30</p>
     </div>
     <div>
-      <img src="./public/entree.png" alt="entrée de l'etablissement">
     </div>
   </section>
 
-
   <section id="section2">
-    <img class="quote" src="./public/quote.svg" alt="guillemets">
+    <div>
+      <img class="quote" src="./public/quote.svg" alt="guillemets">
+    </div>
+
     <p>Les parents sont ici acteurs. Ils jouent un rôle important. Petidum est, en effet, née de la volonté et l’envie des parents de créer un lieu d’accueil pour les enfants, où parents et professionnels travaillent et réfléchissent ensemble à l’éducation et au bien-être des enfants.
       <img class="quote" src="./public/quote.svg" alt="guillemets">
     </p>
   </section>
 
-
   <section id="section3">
     <h2>Les axes pédagogiques de Petidum</h2>
     <div>
-      <img src="./public/illustration1.png" alt="illustration de nature">
-      <h3>La nature</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id perferendis corrupti distinctio totam magni animi libero odit quia sapiente. Placeat cupiditate, sed cumque tempore aspernatur ipsam alias soluta porro?</p>
-    </div>
-    <div>
-      <img src="./public/illustration2.png" alt="illustration sur la motricité libre">
-      <h3>La motricité libre</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, quisquam tempore necessitatibus distinctio, perspiciatis quo officia amet aliquam veritatis sit illum eum doloribus eveniet eos corporis! Quaerat nisi aspernatur libero.</p>
-    </div>
-    <div>
-      <img src="./public/illustration3.png" alt="illustration sur l'autonomie">
-      <h3>L'autonomie</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ipsum dicta perferendis soluta! Et architecto nam aspernatur ex quasi porro, asperiores totam voluptate? Minima odio velit officiis ipsum quam quasi.</p>
+      <div>
+        <img src="./public/illustration1.png" alt="illustration de nature">
+        <h3>La nature</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id perferendis corrupti distinctio totam magni animi libero odit quia sapiente. Placeat cupiditate, sed cumque tempore aspernatur ipsam alias soluta porro?</p>
+      </div>
+      <div>
+        <img src="./public/illustration2.png" alt="illustration sur la motricité libre">
+        <h3>La motricité libre</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, quisquam tempore necessitatibus distinctio, perspiciatis quo officia amet aliquam veritatis sit illum eum doloribus eveniet eos corporis! Quaerat nisi aspernatur libero.</p>
+      </div>
+      <div>
+        <img src="./public/illustration3.png" alt="illustration sur l'autonomie">
+        <h3>L'autonomie</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ipsum dicta perferendis soluta! Et architecto nam aspernatur ex quasi porro, asperiores totam voluptate? Minima odio velit officiis ipsum quam quasi.</p>
+      </div>
     </div>
   </section>
-
 
   <section id="section4">
     <h2>Les écrits de Petidum</h2>
     <p>Nous vous invitons à télécharger des documents PDF avec informations importantes sur nos activités, projets, protocoles, et autres.</p>
     <div>
-      <img src="./public/dlLink.svg" alt="lien de telechargement projets etablissement">
-      <span>Le projet d’établissement</span>
-    </div>
-    <div>
-      <img src="./public/dlLink.svg" alt="lien de telechargement les protocoles">
-      <span>Les protocoles</span>
-    </div>
-    <div>
-      <img src="./public/dlLink.svg" alt="lien de telechargement les status">
-      <span>Les status</span>
-    </div>
-    <div>
-      <img src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
-      <span>Le projet pédagogique</span>
-    </div>
-    <div>
-      <img src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
-      <span>Règles de fonctionnement</span>
+      <button>
+        <img src="./public/dlLink.svg" alt="lien de telechargement projets etablissement">
+        <span>Le projet d’établissement</span>
+      </button>
+      <button>
+        <img src="./public/dlLink.svg" alt="lien de telechargement les protocoles">
+        <span>Les protocoles</span>
+      </button>
+      <button>
+        <img src="./public/dlLink.svg" alt="lien de telechargement les status">
+        <span>Les status</span>
+      </button>
+      <button>
+        <img src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
+        <span>Le projet pédagogique</span>
+      </button>
+      <button>
+        <img src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
+        <span>Règles de fonctionnement</span>
+      </button>
     </div>
   </section>
 
-
-
   <section id="section5">
-    <h2>Une équipe pluridisciplinaire qui veille au respect du rythme et des besoins de chaque enfant.</h2>
+    <div>
+      <h2>Une équipe pluridisciplinaire qui veille au respect du rythme et des besoins de chaque enfant.</h2>
+    </div>
     <ol>
       <li>Directrice (Educatrice de jeunes enfants)</li>
       <li>Responsable pédagogique (Educatrice de jeunes enfants)</li>
@@ -102,43 +107,38 @@
     </ol>
   </section>
 
-
-
   <section id="section6">
     <div>
       <h2>Nos locaux et notre jardin</h2>
-      <button>
-        left
-      </button>
-      <button>
-        right
-      </button>
+      <div>
+        <button>
+          <
+        </button>
+        <button>
+          >
+        </button>
+      </div>
     </div>
     CAROUSEL A METTRE ICI
   </section>
 
-
-
   <section id="section7">
     <div>
-      <img src="" alt="">
     </div>
     <div>
       <h2>La crèche fournit les couches et les repas</h2>
       <p>Les repas sont fournis par la SPRC (Société Poitevine de Restauration Collective). <a href="/">En savoir plus</a></p>
-      <div>
+      <button>
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
         <span>Exemple de menu des grands</span>
-      </div>
-      <div>
+      </button>
+      <button>
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
-        <span>Exemple de menu des grands</span>
-      </div>
+        <span>Exemple de menu des petits</span>
+      </button>
       <p>Les couches sont fournies par l'entreprise Celluloses de Brocéliande. <a href="/">En savoir plus</a></p>
     </div>
   </section>
-
-
 
   <section id="section8">
     <h2>Inscription</h2>
@@ -152,21 +152,79 @@
     </div>
     <div>
       <p>Le premier contact pour une inscription se fera uniquement par mail à :</p>
-      <a href="mailto:alinerobert.petidum@orange.fr">Alinerobert.petidum@orange.fr</button>
+      <a href="mailto:alinerobert.petidum@orange.fr">alinerobert.petidum@orange.fr</a>
     </div>
     <a href="">Vous avez un besoin urgent de garde? N'hésitez pas à contacter la structure.</a>
   </section>
 
-  <!-- PIED DE PAGE -->
+  <!-- PAGE 2 -->
+
+  <section id="section9" style="display:none">
+    <div>
+      <h1>Les actualités et projets Petidum</h1>
+      <p>Il se passe pleins de choses à Petidum. Retrouvez ici nos projets de l'année et le programme de chaque mois. </p>
+    </div>
+    <div>
+    </div>
+  </section>
+
+  <section id="section10" style="display:none">
+    <div>
+      <h2>Les projets de l’année</h2>
+      <p>Chaque année nous mettons en place de nouveaux projets, voici ceux de cette année.</p>
+      <button>
+        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
+        <span>Détail des projets de 2023/24</span>
+      </button>
+    </div>
+    <ol>
+      <li>Atelier Snoezelen avec Charlotte Douheret</li>
+      <li>Sortie à la ludothèque de Neuville de Poitou</li>
+      <li>Sortie à la bibliothèque de Quinçay</li>
+      <li>Atelier motricité avec Elise Bernard</li>
+      <li>Sortie nature dans Quinçay</li>
+      <li>Échange avec l’EPHAD de Quinçay</li>
+    </ol>
+  </section>
+
+  <section id="section11" style="display:none">
+    <div>
+    </div>
+    <div>
+      <h2>Les actualités du mois</h2>
+      <button>
+        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
+        <span>Décembre 2023</span>
+      </button>
+      <button>
+        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
+        <span>Novembre 2023</span>
+      </button>
+      <button>
+        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
+        <span>Septembre 2023</span>
+      </button>
+      <p>Les couches sont fournies par l'entreprise Celluloses de Brocéliande. <a href="/">En savoir plus</a></p>
+    </div>
+  </section>
+
+  <section id="section12" style="display:none">
+    <h2>Espace parent</h2>
+    <h3><a href="https://discord.com/download"><img src="./public/discord.png" alt="installer discord"></a>Accédez aux photos et vidéo de votre enfants à la crèche</h3>
+    <p>Pour rejoindre le groupe, veuillez télécharger l’application Discord. Ce groupe est modéré et uniquement accessible aux parents des enfants inscrits dans la crêche.</p>
+    <a href="">Rejoindre le groupe Discord</a>
+  </section>
+
+    <!-- PIED DE PAGE -->
   <footer>
     <div>
-      <h3></h3>
+      <h2>Horaires</h2>
       <p>Lundi au vendredi de 7h30 à 18h30.</p>
       <p>A noter : une fermeture est prévue les trois premières semaines d'août et une dizaine de jours entre Noël et le premier de l'an.</p>
 
-      <h3></h3>
+      <h2 id="Contact">Contact</h2>
       <ul>
-        <li>aAdresse : Crèche parentale Petitdum . 2 rue des Quintus . 86190 QUINCAY</li>
+        <li>Adresse : Crèche parentale Petitdum . 2 rue des Quintus . 86190 QUINCAY</li>
         <li>Tel: 05 49 60 75 26</li>
         <li>Email : alinerobert.petidum1@orange.fr</li>
         <li>Site de la crèche : http://www.creche-petidum.fr/</li>
@@ -174,13 +232,28 @@
     </div>
 
     <div>
-      <h3>Nos partenaires</h3>
-      <a href=""><img src="./public/allocations_familiales.png" alt="allocations familiales"></a>
-      <a href=""><img src="./public/mutuelle_sante_assistance.png" alt="mutuelle sante assistance"></a>
-      <a href=""><img src="./public/acepp.png" alt="ACEPP"></a>
-      <a href=""><img src="./public/Haut_Poitou.png" alt="Haut Poitou"></a>
-      <a href=""><img src="./public/Mairie_de_Quincay.png" alt="Mairie de Quincay"></a>
+      <h2>Nos partenaires</h2>
+      <a href=""><img src="./public/allocations_familiales.png" alt="allocations familiales"/></a>
+      <a href=""><img src="./public/Haut_Poitou.png" alt="Haut Poitou"/></a>
+      <a href=""><img src="./public/mutuelle_sante_assistance.png" alt="mutuelle sante assistance"/></a>
+      <a href=""><img src="./public/Mairie_de_Quincay.png" alt="Mairie de Quincay"/></a>
+      <a href=""><img src="./public/acepp.png" alt="ACEPP"/></a>
     </div>
   </footer>
+  <script>
+    const link1 = document.querySelector("header nav ol li:nth-child(2)");
+    const link2 = document.querySelector("header nav ol li:nth-child(3)");
+    const sections = Array.from({ length: 12 }, (_, i) => document.getElementById(`section${i + 1}`));
+  
+    function changePage() {
+      link1.classList.toggle("active");
+      link2.classList.toggle("active");
+  
+      sections.forEach(section => {
+        // Toggle display property directly
+        section.style.display = (section.style.display === 'none') ? '' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
