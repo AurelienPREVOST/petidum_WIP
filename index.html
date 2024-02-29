@@ -11,12 +11,11 @@
   <title>PETIDUM</title>
 </head>
 <body>
-  <!-- BARRE DE NAVIGATION -->
   <header>
     <nav>
       <ol>
         <img src="./public/LOGO.png" alt="logo de petidum">
-        <li class="active" onclick="changePage()">Créche Petidum</li>
+        <li class="active" onclick="changePage(e)">Créche Petidum</li>
         <li onclick="changePage()">Actualités et espace parents</li>
         <a href="#Contact">Contactez-nous</a>
       </ol>
@@ -30,7 +29,7 @@
       <p>Petidum accueil tous les enfants du territoire de la Communauté de Commune du Haut-Poitou âgés entre 10 semaines et 6 ans.</p>
       <p>Horaires d’accueil: lundi au vendredi, 7:30 - 18:30</p>
     </div>
-    <div>
+    <div style="background-image: url(./public/entree.png);">
     </div>
   </section>
 
@@ -69,23 +68,23 @@
     <h2>Les écrits de Petidum</h2>
     <p>Nous vous invitons à télécharger des documents PDF avec informations importantes sur nos activités, projets, protocoles, et autres.</p>
     <div>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test1.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement projets etablissement">
         <span>Le projet d’établissement</span>
       </button>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test2.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement les protocoles">
         <span>Les protocoles</span>
       </button>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test1.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement les status">
         <span>Les status</span>
       </button>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test2.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
         <span>Le projet pédagogique</span>
       </button>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test1.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
         <span>Règles de fonctionnement</span>
       </button>
@@ -119,36 +118,41 @@
         </button>
       </div>
     </div>
-<!-- CAROUSEL RESPONSIVE HOMEMADE -->
-
     <div id="carouselContainer" style="transform:translateX(0vw)">
-      <div class="carousel" style="background-image:url(https://plus.unsplash.com/premium_photo-1674086524511-567ad049a61a?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      <div class="carousel" style="background-image:url(./public/exterieur1.png)">
       </div>
-      <div class="carousel" style="background-image:url(https://images.unsplash.com/photo-1709125506210-a59fffe3d004?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      <div class="carousel" style="background-image:url(./public/exterieur2.png)">
       </div>
-      <div class="carousel" style="background-image:url(https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      <div class="carousel" style="background-image:url(./public/interieur1.png)">
       </div>
-      <div class="carousel" style="background-image:url(https://plus.unsplash.com/premium_photo-1705091309844-37d07512b916?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      <div class="carousel" style="background-image:url(./public/interieur2.png)">
       </div>
-      <div class="carousel" style="background-image:url(https://images.unsplash.com/photo-1709002461508-408bdea0b5e9?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+      <div class="carousel" style="background-image:url(./public/interieur8.png)">
+      </div>
+      <div class="carousel" style="background-image:url(./public/interieur4.png)">
+      </div>
+      <div class="carousel" style="background-image:url(./public/interieur5.png)">
+      </div>
+      <div class="carousel" style="background-image:url(./public/interieur6.png)">
+      </div>
+      <div class="carousel" style="background-image:url(./public/interieur7.png)">
+      </div>
+      <div class="carousel" style="background-image:url(./public/interieur3.png)">
       </div>
     </div>
-
-<!-- CAROUSEL RESPONSIVE HOMEMADE -->
-
   </section>
 
   <section id="section7">
-    <div>
+    <div  style="background-image: url(./public/tableRepas.png);">
     </div>
     <div>
       <h2>La crèche fournit les couches et les repas</h2>
       <p>Les repas sont fournis par la SPRC (Société Poitevine de Restauration Collective). <a href="/">En savoir plus</a></p>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test1.pdf">
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
         <span>Exemple de menu des grands</span>
       </button>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test2.pdf">
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
         <span>Exemple de menu des petits</span>
       </button>
@@ -175,12 +179,12 @@
 
   <!-- PAGE 2 -->
 
-  <section id="section9" style="display:none">
+  <section id="section9" style="display:none;">
     <div>
       <h1>Les actualités et projets Petidum</h1>
       <p>Il se passe pleins de choses à Petidum. Retrouvez ici nos projets de l'année et le programme de chaque mois. </p>
     </div>
-    <div>
+    <div style="background-image: url(./public/sandbox.png);">
     </div>
   </section>
 
@@ -188,7 +192,7 @@
     <div>
       <h2>Les projets de l’année</h2>
       <p>Chaque année nous mettons en place de nouveaux projets, voici ceux de cette année.</p>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test1.pdf">
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
         <span>Détail des projets de 2023/24</span>
       </button>
@@ -204,19 +208,19 @@
   </section>
 
   <section id="section11" style="display:none">
-    <div>
+    <div style="background-image: url(./public/infos.png);">
     </div>
     <div>
       <h2>Les actualités du mois</h2>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test1.pdf">
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
         <span>Décembre 2023</span>
       </button>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test0.pdf">
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
         <span>Novembre 2023</span>
       </button>
-      <button>
+      <button class="openPdfButton" data-url="./pdf/test1.pdf">
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
         <span>Septembre 2023</span>
       </button>
@@ -231,7 +235,6 @@
     <a href="">Rejoindre le groupe Discord</a>
   </section>
 
-    <!-- PIED DE PAGE -->
   <footer>
     <div>
       <h2>Horaires</h2>
@@ -254,76 +257,89 @@
       <a href="https://www.msa.fr/" target="_blank"><img src="./public/mutuelle_sante_assistance.png" alt="mutuelle sante assistance"/></a>
       <a href="https://quincay.fr/" target="_blank"><img src="./public/Mairie_de_Quincay.png" alt="Mairie de Quincay"/></a>
       <a href="https://www.acepp.asso.fr/" target="_blank"><img src="./public/acepp.png" alt="ACEPP"/></a>
+      <p>Mis à jour en 2024 - Webmaster <a href="https://www.linkedin.com/in/prevost-aurelien-dev">PREVOST Aurelien</a></p>
     </div>
   </footer>
   <script>
+    // script du faux routeur
     const link1 = document.querySelector("header nav ol li:nth-child(2)");
     const link2 = document.querySelector("header nav ol li:nth-child(3)");
     const sections = Array.from({ length: 12 }, (_, i) => document.getElementById(`section${i + 1}`));
 
-    function changePage() {
-      link1.classList.toggle("active");
-      link2.classList.toggle("active");
+    function changePage(clickedLink) {
+      if (clickedLink.classList.contains("active")) {
+        return;
+      }
+      link1.classList.remove("active");
+      link2.classList.remove("active");
+
+      clickedLink.classList.add("active");
 
       sections.forEach(section => {
-        // Toggle display property directly
         section.style.display = (section.style.display === 'none') ? '' : 'none';
       });
     }
+
+    link1.addEventListener("click", function() {
+      changePage(link1);
+    });
+
+    link2.addEventListener("click", function() {
+      changePage(link2);
+    });
   </script>
+  <script>
+    // Script du carousel
+    const carouselContainer = document.getElementById("carouselContainer");
+    const scrollOnLeft = document.getElementById("scrollOnLeft");
+    const scrollOnRight = document.getElementById("scrollOnRight");
+    let i = 0;
 
-
-<script>
-  // Gestion carousel homemade
-  const carouselContainer = document.getElementById("carouselContainer");
-  const scrollOnLeft = document.getElementById("scrollOnLeft");
-  const scrollOnRight = document.getElementById("scrollOnRight");
-
-  let i = 0;
-
-  function updateScrollButtons() {
-      // Récupérer la largeur de l'écran
+    function updateScrollButtons() {
       const screenWidth = window.innerWidth;
-
-      // Changer la valeur en fonction de la largeur de l'écran
       const vwValue = screenWidth < 480 ? 42 : 34;
-
-      // Mettre à jour les boutons de défilement en fonction de la position actuelle
+      let limitValue = screenWidth < 480 ? 10 : 8;
       scrollOnLeft.disabled = i === 0;
-      scrollOnRight.disabled = i === 3;
-
-      // Mettre à jour la position du carousel
+      scrollOnRight.disabled = i === limitValue;
       const transformValue = `translateX(${-i * vwValue}vw)`;
       carouselContainer.style.transform = transformValue;
-  }
+    }
 
-  function scrollRight() {
-      if (i === 3) {
-          return;
+    function scrollRight() {
+      const screenWidth = window.innerWidth;
+      let limitValue = screenWidth < 480 ? 10 : 8;
+      if (i === limitValue) {
+        return;
       }
       i++;
       updateScrollButtons();
-  }
+    }
 
-  function scrollLeft() {
+    function scrollLeft() {
+      const screenWidth = window.innerWidth;
+      let limitValue = screenWidth < 480 ? 10 : 8;
       if (i === 0) {
-          return;
+        return;
       }
+
       i--;
       updateScrollButtons();
-  }
+    }
 
-  // Appeler la fonction pour configurer les boutons et la position initiale
-  updateScrollButtons();
-
-  // Ajouter des écouteurs d'événements pour les boutons
-  scrollOnLeft.addEventListener("click", scrollLeft);
-  scrollOnRight.addEventListener("click", scrollRight);
-
-  // Ajouter un écouteur d'événement pour redimensionner la fenêtre
-  window.addEventListener("resize", updateScrollButtons);
-</script>
-
-
+    updateScrollButtons();
+    scrollOnLeft.addEventListener("click", scrollLeft);
+    scrollOnRight.addEventListener("click", scrollRight);
+    window.addEventListener("resize", updateScrollButtons);
+  </script>
+  <script>
+    // Script de telechargements des PDF
+    const openPdfButtons = document.querySelectorAll(".openPdfButton");
+    openPdfButtons.forEach(button => {
+      button.addEventListener("click", function() {
+        const fileURL = this.getAttribute("data-url");
+        window.open(fileURL, "_blank");
+      });
+    });
+  </script>
 </body>
 </html>
