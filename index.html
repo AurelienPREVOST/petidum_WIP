@@ -147,7 +147,7 @@
     </div>
     <div>
       <h2>La crèche fournit les couches et les repas</h2>
-      <p>Les repas sont fournis par la SPRC (Société Poitevine de Restauration Collective). <a href="/">En savoir plus</a></p>
+      <p>Les repas sont fournis par la SPRC (Société Poitevine de Restauration Collective). <a href="https://enseletgratin.fr/">En savoir plus</a></p>
       <button class="openPdfButton" data-url="./pdf/test1.pdf">
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
         <span>Exemple de menu des grands</span>
@@ -156,7 +156,7 @@
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
         <span>Exemple de menu des petits</span>
       </button>
-      <p>Les couches sont fournies par l'entreprise Celluloses de Brocéliande. <a href="/">En savoir plus</a></p>
+      <p>Les couches sont fournies par l'entreprise Celluloses de Brocéliande. <a href="https://www.celluloses-broceliande.fr/">En savoir plus</a></p>
     </div>
   </section>
 
@@ -172,7 +172,8 @@
     </div>
     <div>
       <p>Le premier contact pour une inscription se fera uniquement par mail à :</p>
-      <a href="mailto:alinerobert.petidum@orange.fr">alinerobert.petidum@orange.fr</a>
+      <button id="mailButton" onclick="transformToMailLink()">Cliquez ici pour voir l'email</button>
+      <p style="font-size:smaller;font-style:italic">* Protection anti-bot</p>
     </div>
     <a href="#Contact">Vous avez un besoin urgent de garde? N'hésitez pas à contacter la structure.</a>
   </section>
@@ -224,7 +225,6 @@
         <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
         <span>Septembre 2023</span>
       </button>
-      <p>Les couches sont fournies par l'entreprise Celluloses de Brocéliande. <a href="/">En savoir plus</a></p>
     </div>
   </section>
 
@@ -350,5 +350,17 @@
       });
     });
   </script>
+  <script>
+    function transformToMailLink() {
+        // Créer un élément 'a' avec le lien mailto
+        var mailLink = document.createElement("a");
+        mailLink.href = "mailto:alinerobert.petidum@orange.fr";
+        mailLink.textContent = "alinerobert.petidum@orange.fr";
+
+        // Remplacer le bouton par le lien créé
+        var mailButton = document.getElementById("mailButton");
+        mailButton.parentNode.replaceChild(mailLink, mailButton);
+    }
+</script>
 </body>
 </html>

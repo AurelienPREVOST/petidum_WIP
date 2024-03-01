@@ -27,6 +27,13 @@ h2 {
   margin:0 0 1.5em 0;
 }
 
+#section7 div button.openPdfButton:hover,
+#section11 div button.openPdfButton:hover,
+#section10 div:first-child button.openPdfButton:hover,
+#section4 div button.openPdfButton:hover {
+  box-shadow: inset 0px 2px 5px 1px #000000
+}
+
 .hidden {
   display: none;
 }
@@ -53,6 +60,12 @@ header nav ol {
 header nav ol li, button, a {
   cursor: pointer;
 }
+
+header nav ol li:hover, header nav a:hover, #section8 a:hover, #mailButton:hover{
+  transition: 150ms;
+  box-shadow: 0 1px 3px 1px rgba(184, 184, 184, 0.56);
+}
+
 header nav ol li {
   font-size: 0.8em;
   display: flex;
@@ -64,6 +77,8 @@ header nav ol li {
   line-height: 15px;
   width: 90%;
   justify-content: center;
+  border-radius: 50px;
+  transition: 150ms;
 }
 .active {
   font-weight: bold;
@@ -77,7 +92,8 @@ header nav a {
   text-decoration: none;
   background-color:#86E7B7;
   border-radius:60px;
-  padding:20px
+  padding:20px;
+  transition: 150ms;
 }
 header nav img {
   width: 30vw;
@@ -320,11 +336,17 @@ p {
   margin: 2% 0;
 }
 
-#section8 div a, #section12 > a:last-child {
+#section8 div a, #mailButton, #section12 > a:last-child {
   text-decoration: none;
   padding:20px;
   border-radius:60px;
   background-color: #FFC602;
+  transition:150ms
+}
+
+#mailButton{
+  border:none;
+  width:100%
 }
 
 #section8 a {
@@ -336,6 +358,10 @@ p {
   text-align: center;
   border-radius: 50px;
   background-color: #D3F0FF;
+  transition:150ms
+}
+
+#section8 a:nth-child(4){
   margin-top:2em;
 }
 
@@ -544,5 +570,14 @@ footer div:nth-child(2) p:last-child a{
   }
   #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section11, #section10, #section12, footer {
     padding:10% 15%
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  header nav ol {
+    padding: 0 25%;
+  }
+  #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section11, #section10, #section12, footer {
+    padding:10% 25%
   }
 }
