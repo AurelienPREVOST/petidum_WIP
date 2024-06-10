@@ -16,6 +16,11 @@
     <nav>
       <ol>
         <img src="./public/LOGO.png" alt="logo de petidum">
+        <div class="menu-desktop">
+          <button onclick="goToFirstPage()">Créche Petidum</button>
+          <button onclick="goToSecondPage()">Actualités et espace parents</button>
+          <a href="#Contact" style="display:inherit">Contactez-nous</a>
+        </div>
         <li class="first-link-burger-menu active" onclick="goToFirstPage()">Créche Petidum</li>
         <li class="second-link-burger-menu" onclick="goToSecondPage()">Actualités et espace parents</li>
         <a href="#Contact">Contactez-nous</a>
@@ -46,15 +51,17 @@
   </section>
 
   <section id="section2">
-    <div class="quoteContainer1">
-      <img src="./public/quote.svg" alt="guillemets">
-    </div>
-
-    <p>Les parents sont ici acteurs. Ils jouent un rôle important. Petidum est, en effet, née de la volonté et l’envie des parents de créer un lieu d'accueil pour les enfants, où parents et professionnels travaillent et réfléchissent ensemble à l'éducation et au bien-être des enfants.
-      <div class="quoteContainer2">
+    <div>
+      <div class="quoteContainer1">
         <img src="./public/quote.svg" alt="guillemets">
       </div>
-    </p>
+  
+      <p>Les parents sont ici acteurs. Ils jouent un rôle important. Petidum est, en effet, née de la volonté et l’envie des parents de créer un lieu d'accueil pour les enfants, où parents et professionnels travaillent et réfléchissent ensemble à l'éducation et au bien-être des enfants.
+        <div class="quoteContainer2">
+          <img src="./public/quote.svg" alt="guillemets">
+        </div>
+      </p>
+    </div>
   </section>
 
   <section id="section3">
@@ -63,25 +70,31 @@
       <div class="item">
         <div class="illustration1">
         </div>
-        <h3>La nature</h3>
-        <p>Sortir à l'exterieur est un besoin de l'enfant. À Petidum, le jardin est investi aussi souvent que possible. Pour développer l'imagination et la créativité, nous encourageons les enfants à jouer avec les éléments de la nature (cabane en bambou, chasse aux escargots, fleurs, feuilles, gratter la terre, courir, crier, ...).
-          L'équipe a fait le choix de sortir par tous les temps avec les enfants.
-        </p>
+        <div>
+          <h3>La nature</h3>
+          <p>Sortir à l'exterieur est un besoin de l'enfant. À Petidum, le jardin est investi aussi souvent que possible. Pour développer l'imagination et la créativité, nous encourageons les enfants à jouer avec les éléments de la nature (cabane en bambou, chasse aux escargots, fleurs, feuilles, gratter la terre, courir, crier, ...).
+            L'équipe a fait le choix de sortir par tous les temps avec les enfants.
+          </p>
+        </div>
       </div>
       <div class="item">
         <div class="illustration2">
         </div>
-        <h3>La motricité libre</h3>
-        <p>Selon Emmi Pickler “la liberté motrice consiste à laisser libre cours à tous les mouvements spontanés de l'enfant, sans lui enseigner quelque mouvement que ce soit.”
-        À Petidum, l'espace est amenagé pour favoriser cette motricite libre et ainsi permettre à l'enfant de découvrir son corps, ses capacités et ses besoins. Les enfants ont la possibilité de monter sur les meubles dans le respect de leurs capacités et sous le regard bienveillant des professionnelles.
-        </p>
+        <div>
+          <h3>La motricité libre</h3>
+          <p>Selon Emmi Pickler “la liberté motrice consiste à laisser libre cours à tous les mouvements spontanés de l'enfant, sans lui enseigner quelque mouvement que ce soit.”
+          À Petidum, l'espace est amenagé pour favoriser cette motricite libre et ainsi permettre à l'enfant de découvrir son corps, ses capacités et ses besoins. Les enfants ont la possibilité de monter sur les meubles dans le respect de leurs capacités et sous le regard bienveillant des professionnelles.
+          </p>
+        </div>
       </div>
       <div class="item">
         <div class="illustration3">
         </div>
-        <h3>L'autonomie</h3>
-        <p>À Petidum nous favorisons l’autonomie et nous accompagnons les enfants à faire les choses par eux-même et à prendre leurs propres décisions. 
-        </p>
+        <div>
+          <h3>L'autonomie</h3>
+          <p>À Petidum nous favorisons l’autonomie et nous accompagnons les enfants à faire les choses par eux-même et à prendre leurs propres décisions. 
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -185,17 +198,19 @@
   <section id="section8">
     <h2>Inscription</h2>
     <div>
-      <p>L'admission d'un enfant est décidée en fonction des places disponibles et certains critères :</p>
-      <ol>
-        <li>Fratrie encore au sein de la structure</li>
-        <li>Habitants de la Communauté de Communes du Haut Poitou</li>
-        <li>Antériorité sur la liste d'attente</li>
-      </ol>
-    </div>
-    <div>
-      <p>Le premier contact pour une inscription se fera uniquement par mail à :</p>
-      <button id="mailButton" onclick="transformToMailLink()">Cliquez ici pour voir l'email</button>
-      <p style="font-size:smaller;font-style:italic">* Protection anti-bot</p>
+      <div>
+        <p>L'admission d'un enfant est décidée en fonction des places disponibles et certains critères :</p>
+        <ol>
+          <li>Fratrie encore au sein de la structure</li>
+          <li>Habitants de la Communauté de Communes du Haut Poitou</li>
+          <li>Antériorité sur la liste d'attente</li>
+        </ol>
+      </div>
+      <div>
+        <p>Le premier contact pour une inscription se fera uniquement par mail à :</p>
+        <button id="mailButton" onclick="transformToMailLink()">Cliquez ici pour voir l'email</button>
+        <p style="font-size:smaller;font-style:italic">* Protection anti-bot</p>
+      </div>
     </div>
     <a href="#Contact">Vous avez un besoin urgent de garde? N'hésitez pas à contacter la structure.</a>
   </section>
