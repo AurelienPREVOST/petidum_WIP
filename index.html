@@ -8,22 +8,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style2.css">
+  <link rel="stylesheet" href="./style.css">
   <title>PETIDUM</title>
 </head>
 <body>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 Navbar                                  -->
+<!-- ----------------------------------------------------------------------- -->  
   <header>
     <nav>
       <ol>
         <img src="./public/LOGO.png" alt="logo de petidum">
         <div class="menu-desktop">
-          <button onclick="goToFirstPage()">Créche Petidum</button>
-          <button onclick="goToSecondPage()">Actualités et espace parents</button>
+          <button onclick="goToFirstPage()" class="firstPageButton bolder">Créche Petidum</button>
+          <button onclick="goToSecondPage()" class="secondPageButton">Actualités et espace parents</button>
           <a href="#Contact" style="display:inherit">Contactez-nous</a>
         </div>
-        <li class="first-link-burger-menu active" onclick="goToFirstPage()">Créche Petidum</li>
-        <li class="second-link-burger-menu" onclick="goToSecondPage()">Actualités et espace parents</li>
-        <a href="#Contact">Contactez-nous</a>
         <img src="./public/burger.svg" alt="" class="burger-menu" onclick="toggleBurgerMenu()">
       </ol>
     </nav>
@@ -33,37 +33,43 @@
           <img src="./public/LOGO.png" alt="logo de petidum">
           <img src="./public/close.svg" alt="" onclick="toggleBurgerMenu()">
         </li>
-        <li class="first-link-burger-menu active" onclick="goToFirstPage()">Créche Petidum</li>
-        <li class="second-link-burger-menu" onclick="goToSecondPage()">Actualités et espace parents</li>
+        <li class="first-link-burger-menu active firstPageButton bolder" onclick="goToFirstPage()">Créche Petidum</li>
+        <li class="second-link-burger-menu secondPageButton" onclick="goToSecondPage()">Actualités et espace parents</li>
       </ul>
     </div>
   </header>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section1                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section1">
     <div>
       <h1>Petidum est un multi-accueil collectif associatif à gestion parentale</h1>
-      <p>Situé à Quincay dans la Vienne, la structure a une capacité d’accueil de 16 places agréée par la PMI.</p>
+      <p>Situé à Quincay dans la Vienne, la structure a une capacité d'accueil de 16 places agréée par la PMI.</p>
       <p>Petidum accueil tous les enfants du territoire de la Communauté de Commune du Haut-Poitou âgés entre 10 semaines et 6 ans.</p>
-      <p>Horaires d’accueil: lundi au vendredi, 7:30 - 18:30</p>
+      <p>Horaires d'accueil: lundi au vendredi, 7:30 - 18:30</p>
     </div>
     <div style="background-image: url(./public/entree.png);">
     </div>
   </section>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section2                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section2">
     <div>
       <div class="quoteContainer1">
         <img src="./public/quote.svg" alt="guillemets">
       </div>
   
-      <p>Les parents sont ici acteurs. Ils jouent un rôle important. Petidum est, en effet, née de la volonté et l’envie des parents de créer un lieu d'accueil pour les enfants, où parents et professionnels travaillent et réfléchissent ensemble à l'éducation et au bien-être des enfants.
+      <p>Les parents sont ici acteurs. Ils jouent un rôle important. Petidum est, en effet, née de la volonté et l'envie des parents de créer un lieu d'accueil pour les enfants, où parents et professionnels travaillent et réfléchissent ensemble à l'éducation et au bien-être des enfants.
         <div class="quoteContainer2">
           <img src="./public/quote.svg" alt="guillemets">
         </div>
       </p>
     </div>
   </section>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section3                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section3">
     <h2>Les axes pédagogiques de Petidum</h2>
     <div>
@@ -92,40 +98,44 @@
         </div>
         <div>
           <h3>L'autonomie</h3>
-          <p>À Petidum nous favorisons l’autonomie et nous accompagnons les enfants à faire les choses par eux-même et à prendre leurs propres décisions. 
+          <p>À Petidum nous favorisons l'autonomie et nous accompagnons les enfants à faire les choses par eux-même et à prendre leurs propres décisions. 
           </p>
         </div>
       </div>
     </div>
   </section>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section4                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section4">
     <h2>Les écrits de Petidum</h2>
     <p>Nous vous invitons à télécharger des documents PDF avec informations importantes sur nos activités, projets, protocoles, et autres.</p>
     <div>
-      <button class="openPdfButton" data-url="./pdf/test1.pdf">
+      <button class="openPdfButton" data-url="./pdf/1.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement projets etablissement">
-        <span>Le projet d’établissement</span>
+        <span>Le projet d'établissement</span>
       </button>
-      <button class="openPdfButton" data-url="./pdf/test2.pdf">
+      <button class="openPdfButton" data-url="./pdf/2.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement les protocoles">
         <span>Les protocoles</span>
       </button>
-      <button class="openPdfButton" data-url="./pdf/test1.pdf">
+      <button class="openPdfButton" data-url="./pdf/3.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement les status">
         <span>Les status</span>
       </button>
-      <button class="openPdfButton" data-url="./pdf/test2.pdf">
+      <button class="openPdfButton" data-url="./pdf/4.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
         <span>Le projet pédagogique</span>
       </button>
-      <button class="openPdfButton" data-url="./pdf/test1.pdf">
+      <button class="openPdfButton" data-url="./pdf/5.pdf">
         <img src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
         <span>Règles de fonctionnement</span>
       </button>
     </div>
   </section>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section5                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section5">
     <div>
       <h2>Une équipe pluridisciplinaire qui veille au respect du rythme et des besoins de chaque enfant.</h2>
@@ -140,7 +150,9 @@
       <li>Stagiaires et apprentis</li>
     </ol>
   </section>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section6                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section6">
     <div>
       <h2>Nos locaux et notre jardin</h2>
@@ -177,24 +189,12 @@
     </div>
   </section>
 
-  <!-- <section id="section7">
-    <div  style="background-image: url(./public/tableRepas.png);">
-    </div>
-    <div>
-      <h2>La crèche fournit les couches et les repas</h2>
-      <p>Les repas sont fournis par la SPRC (Société Poitevine de Restauration Collective). <a href="https://enseletgratin.fr/">En savoir plus</a></p>
-      <button class="openPdfButton" data-url="./pdf/test1.pdf">
-        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
-        <span>Exemple de menu des grands</span>
-      </button>
-      <button class="openPdfButton" data-url="./pdf/test2.pdf">
-        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
-        <span>Exemple de menu des petits</span>
-      </button>
-      <p>Les couches sont fournies par l'entreprise Celluloses de Brocéliande. <a href="https://www.celluloses-broceliande.fr/">En savoir plus</a></p>
-    </div>
-  </section> -->
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                    Section 7 supprimé suite reunion                     -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section8                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section8">
     <h2>Inscription</h2>
     <div>
@@ -215,8 +215,10 @@
     <a href="#Contact">Vous avez un besoin urgent de garde? N'hésitez pas à contacter la structure.</a>
   </section>
 
-  <!-- PAGE 2 -->
-  <!--  -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section9                                 -->
+<!-- ----------------------------------------------------------------------- -->
+
   <section id="section9" style="display:none;">
     <div>
       <h1>Les actualités et projets Petidum</h1>
@@ -225,7 +227,9 @@
     <div style="background-image: url(./public/sandbox.png);">
     </div>
   </section>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section10                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section10" style="display:none;">
     <div>
       <h1>Les projets de l'année</h1>
@@ -241,36 +245,46 @@
       <li>Sortie à la bibliothèque de Quinçay</li>
       <li>Atelier motricité avec Elise Bernard</li>
       <li>Sortie nature dans Quinçay</li>
-      <li>Échange avec l’EPHAD de Quinçay</li>
+      <li>Échange avec l'EPHAD de Quinçay</li>
     </ol>
   </section>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section11                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section11" style="display:none;">
     <div style="background-image: url(./public/infos.png);">
     </div>
     <div>
       <h2>Les actualités du mois</h2>
-      <button class="openPdfButton" data-url="./pdf/test1.pdf">
-        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
-        <span>Décembre 2023</span>
-      </button>
-      <button class="openPdfButton" data-url="./pdf/test0.pdf">
-        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
-        <span>Novembre 2023</span>
-      </button>
-      <button class="openPdfButton" data-url="./pdf/test1.pdf">
-        <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
-        <span>Septembre 2023</span>
-      </button>
+      <div>
+        <button class="openPdfButton" data-url="./pdf/test1.pdf">
+          <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
+          <span>Décembre 2023</span>
+        </button>
+        <button class="openPdfButton" data-url="./pdf/test0.pdf">
+          <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement le projet pedagogique">
+          <span>Novembre 2023</span>
+        </button>
+        <button class="openPdfButton" data-url="./pdf/test1.pdf">
+          <img class="dllink" src="./public/dlLink.svg" alt="lien de telechargement règles de fonctionnement">
+          <span>Septembre 2023</span>
+        </button>
+      </div>
     </div>
   </section>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Section12                                 -->
+<!-- ----------------------------------------------------------------------- -->
   <section id="section12" style="display:none;">
     <h2>Espace parent</h2>
     <h3><a href="https://discord.com/download"><img src="./public/discord.png" alt="installer discord"></a>Accédez aux photos et vidéo de votre enfants à la crèche</h3>
-    <p>Pour rejoindre le groupe, veuillez télécharger l’application Discord. Ce groupe est modéré et uniquement accessible aux parents des enfants inscrits dans la crêche.</p>
+    <p>Pour rejoindre le groupe, veuillez télécharger l'application Discord. Ce groupe est modéré et uniquement accessible aux parents des enfants inscrits dans la crêche.</p>
   </section>
 
+  <div class="overlay hidden"></div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 Footer                                  -->
+<!-- ----------------------------------------------------------------------- -->
   <footer>
     <div>
       <h2>Horaires</h2>
@@ -297,107 +311,74 @@
     </div>
   </footer>
   <script>
-    function toggleBurgerMenu() {
-      const burgerMenu = document.querySelector(".menu-deploy")
-      burgerMenu.classList.toggle("display")
-    }
+    // Script qui permet en mode smartphone d'afficher ou non le menu de navigation lateral 
+    const toggleBurgerMenu = () => document.querySelector(".menu-deploy").classList.toggle("display");
   </script>
   <script>
-    // script du faux routeur
-    const burgerMenu = document.querySelector(".menu-deploy")
-    const section1 = document.querySelector("#section1");
-    const section2 = document.querySelector("#section2");
-    const section3 = document.querySelector("#section3");
-    const section4 = document.querySelector("#section4");
-    const section5 = document.querySelector("#section5");
-    const section6 = document.querySelector("#section6");
-    const section8 = document.querySelector("#section8");
-    const section9 = document.querySelector("#section9");
-    const section10 = document.querySelector("#section10");
-    const section11 = document.querySelector("#section11");
-    const section12 = document.querySelector("#section12");
+    // Script qui permet de simuler un faux router et de "changer de page"
+    const burgerMenu = document.querySelector(".menu-deploy");
+    const sections = document.querySelectorAll("#section1, #section2, #section3, #section4, #section5, #section6, #section8");
+    const otherSections = document.querySelectorAll("#section9, #section10, #section11, #section12");
+  
+    const toggleDisplay = (elements, display) => elements.forEach(el => el.style.display = display);
 
+    const firstPageBtn = document.querySelectorAll(".firstPageButton")
+    const secondPageBtn = document.querySelectorAll(".secondPageButton")
+  
     function goToSecondPage() {
-      section1.style.display = "none";
-      section2.style.display = "none";
-      section3.style.display = "none";
-      section4.style.display = "none";
-      section5.style.display = "none";
-      section6.style.display = "none";
-      section8.style.display = "none";
-      section9.style.removeProperty('display');
-      section10.style.removeProperty('display');
-      section11.style.removeProperty('display');
-      section12.style.removeProperty('display');
-      burgerMenu.classList.toggle("display")
+      toggleDisplay(sections, "none");
+      toggleDisplay(otherSections, "");
+      burgerMenu.classList.toggle("display");
+      firstPageBtn.forEach(el => el.classList.remove("bolder"))
+      secondPageBtn.forEach(el => el.classList.add("bolder"))
     }
-
+  
     function goToFirstPage() {
-      section1.style.removeProperty('display');
-      section2.style.removeProperty('display');
-      section3.style.removeProperty('display');
-      section4.style.removeProperty('display');
-      section5.style.removeProperty('display');
-      section6.style.removeProperty('display');
-      section8.style.removeProperty('display');
-      section9.style.display = "none";
-      section10.style.display = "none";
-      section11.style.display = "none";
-      section12.style.display = "none";
-      burgerMenu.classList.toggle("display")
+      toggleDisplay(sections, "");
+      toggleDisplay(otherSections, "none");
+      burgerMenu.classList.toggle("display");
+      secondPageBtn.forEach(el => el.classList.remove("bolder"))
+      firstPageBtn.forEach(el => el.classList.add("bolder"))
     }
   </script>
   <script>
-    // Script du carousel
-    const carouselContainer = document.getElementById("carouselContainer");
-    const scrollOnLeft = document.getElementById("scrollOnLeft");
-    const scrollOnRight = document.getElementById("scrollOnRight");
-    let i = 0;
+    // Script qui permet de gérer le carousel en detectant la largeur de l'ecran en amont pour adapté la translation
+      document.addEventListener("DOMContentLoaded", function() {
+          const carouselContainer = document.getElementById("carouselContainer");
+          const scrollOnLeft = document.getElementById("scrollOnLeft");
+          const scrollOnRight = document.getElementById("scrollOnRight");
+          const carousels = document.querySelectorAll(".carousel");
+          let i = 0;
 
-    function updateScrollButtons() {
-      const screenWidth = window.innerWidth;
-      console.log("largeur d'ecran", screenWidth)
-      const vwValue = screenWidth < 480 ? 42 : 34;
-      let limitValue = screenWidth < 480 ? 10 : 8;
-      console.log(limitValue)
-      scrollOnLeft.disabled = i === 0;
-      scrollOnRight.disabled = i === limitValue;
-      const transformValue = `translateX(${-i * vwValue}vw)`;
-      carouselContainer.style.transform = transformValue;
-    }
+          const carouselWidth = carousels[0].offsetWidth;
+          const carouselMargin = parseInt(getComputedStyle(carousels[0]).marginLeft) + parseInt(getComputedStyle(carousels[0]).marginRight);
+          const totalCarouselWidth = carouselWidth + carouselMargin;
 
-    function scrollRight() {
-      const screenWidth = window.innerWidth;
-      let limitValue = screenWidth < 480 ? 10 : 8;
-      console.log(limitValue)
+          function updateScrollButtons() {
+              scrollOnLeft.disabled = i === 0;
+              scrollOnRight.disabled = i === carousels.length - 1;
+          }
 
-      if (i === limitValue) {
-        return;
-      }
-      i++;
-      console.log(i)
+          function scrollRight() {
+              if (i < carousels.length - 1) {
+                  i++;
+                  carouselContainer.style.transform = `translateX(${-i * totalCarouselWidth}px)`;
+                  updateScrollButtons();
+              }
+          }
 
-      updateScrollButtons();
-    }
+          function scrollLeft() {
+              if (i > 0) {
+                  i--;
+                  carouselContainer.style.transform = `translateX(${-i * totalCarouselWidth}px)`;
+                  updateScrollButtons();
+              }
+          }
 
-    function scrollLeft() {
-      const screenWidth = window.innerWidth;
-      let limitValue = screenWidth < 480 ? 10 : 8;
-      console.log(limitValue)
-
-      if (i === 0) {
-        return;
-      }
-
-      i--;
-      console.log(i)
-      updateScrollButtons();
-    }
-
-    updateScrollButtons();
-    scrollOnLeft.addEventListener("click", scrollLeft);
-    scrollOnRight.addEventListener("click", scrollRight);
-    window.addEventListener("resize", updateScrollButtons);
+          updateScrollButtons();
+          scrollOnLeft.addEventListener("click", scrollLeft);
+          scrollOnRight.addEventListener("click", scrollRight);
+      });
   </script>
   <script>
     // Script de telechargements des PDF
@@ -410,6 +391,7 @@
     });
   </script>
   <script>
+    // Script rapide d'encodage et decodage email pour eviter les bots les plus faibles
     function decodeEmail(encodedEmail) {
         let decodedEmail = '';
         for (let i = 0; i < encodedEmail.length; i++) {
@@ -431,6 +413,26 @@
         var mailButton = document.getElementById("mailButton");
         mailButton.parentNode.replaceChild(mailLink, mailButton);
     }
+  </script>
+  <script>
+    // Script qui permet de zoomé sur les photos du carousel
+    const overlay = document.querySelector(".overlay")
+    document.querySelectorAll(".carousel").forEach(carousel => {
+      console.log(carousel)
+        carousel.addEventListener("click", function() {
+            const fixedImage = document.createElement("div");
+            fixedImage.className = "fixed-image";
+            fixedImage.style.backgroundImage = this.style.backgroundImage;
+            document.body.appendChild(fixedImage);
+            overlay.classList.toggle("hidden")
+
+
+            fixedImage.addEventListener("click", function() {
+                document.body.removeChild(fixedImage);
+                overlay.classList.toggle("hidden")
+            });
+        });
+    });
   </script>
 </body>
 </html>
